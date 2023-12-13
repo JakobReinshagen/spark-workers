@@ -32,6 +32,18 @@ def add():
     ret = addWorker(token,request.form['num'])
     return ret
 
+@app.route("/addMultiple",methods=['GET','POST'])
+def add():
+  if request.method=='GET':
+    return "Use post to add" # replace with form template
+  else:
+    token=get_api_key()
+      start_value = request.form['num1]
+      end_value = request.form['num2]
+      for i in range(start_value, end_value + 1):
+          ret = addWorker(token,i)
+    return ret
+
 
 def addWorker(token, num):
     with open('payload.json') as p:
