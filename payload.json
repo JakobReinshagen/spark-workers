@@ -12,7 +12,7 @@
       "deviceName": "slave1",
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/spark-371009/zones/us-west4-b/diskTypes/pd-balanced",
+        "diskType": "projects/lustrous-bond-400811/zones/europe-west2-c/diskTypes/pd-balanced",
         "labels": {},
         "sourceImage": "projects/debian-cloud/global/images/debian-11-bullseye-v20221102"
       },
@@ -26,7 +26,7 @@
   "guestAccelerators": [],
   "keyRevocationActionType": "STOP",
   "labels": {},
-  "machineType": "projects/spark-371009/zones/europe-west1-b/machineTypes/e2-medium",
+  "machineType": "projects/lustrous-bond-400811/zones/europe-west2-c/machineTypes/e2-medium",
   "metadata": {
     "items": [
       {
@@ -45,7 +45,7 @@
         }
       ],
       "stackType": "IPV4_ONLY",
-      "subnetwork": "projects/spark-371009/regions/europe-west1/subnetworks/default"
+      "subnetwork": "projects/lustrous-bond-400811/regions/europe-west2/subnetworks/default"
     }
   ],
   "reservationAffinity": {
@@ -78,5 +78,5 @@
   "tags": {
     "items": []
   },
-  "zone": "projects/spark-371009/zones/europe-west1-b"
+  "zone": "projects/lustrous-bond-400811/zones/europe-west2-c"
 }
