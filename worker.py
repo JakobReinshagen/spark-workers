@@ -40,6 +40,7 @@ def addMultiple():
     token=get_api_key()
     start_value = request.form['num1]
     end_value = request.form['num2]
+    ret = ""
     for i in range(start_value, end_value + 1):
         ret = addWorker(token,i)
     return ret
