@@ -33,7 +33,7 @@ def add():
     return ret
 
 @app.route("/addMultiple",methods=['GET','POST'])
-def add():
+def addMultiple():
   if request.method=='GET':
     return "Use post to add" # replace with form template
   else:
