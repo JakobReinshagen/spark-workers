@@ -42,6 +42,7 @@ def addMultiple():
     end_value = int(request.form['num2'])
     ret = ""
     for i in range(start_value, end_value + 1):
+        sleep(5)
         ret += addWorker(token,i)
     return ret
 
