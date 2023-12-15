@@ -42,7 +42,7 @@ def addMultiple():
     end_value = int(request.form['num2'])
     ret = ""
     for i in range(start_value, end_value + 1):
-        ret = addWorker(token,i)
+        ret += addWorker(token,i)
     return ret
 
 
@@ -55,7 +55,7 @@ def addWorker(token, num):
     headers={"Authorization": "Bearer "+token}
     resp=requests.post(url,headers=headers, data=data)
     if resp.status_code==200:     
-      return "Done"
+      return "Done\n"
     else:
       print(resp.content)
       return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
