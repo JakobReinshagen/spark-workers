@@ -38,8 +38,8 @@ def addMultiple():
     return "Use post to add" # replace with form template
   else:
     token=get_api_key()
-    start_value = request.form['num1']
-    end_value = request.form['num2']
+    start_value = int(request.form['num1'])
+    end_value = int(request.form['num2'])
     ret = ""
     for i in range(start_value, end_value + 1):
         ret = addWorker(token,i)
